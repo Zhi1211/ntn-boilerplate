@@ -131,6 +131,9 @@ Originally based on [Henry Desroches' nuxt-netlify-cms-starter](https://github.c
 - > I tried logging into/saving in Netlify CMS, but I can't
 - It may be that you haven't [enabled Netlify Identity](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/identity) or [setup the Git Gateway](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/identity#services) correctly, [check the docs](https://www.netlifycms.org/docs/git-gateway-backend/)
 
+- > I get Netlify emails but can't use them to login etc.
+- It is probably because the 'netlify-identity-widget' is only included in the `/admin`-page. [Follow the advice here](https://answers.netlify.com/t/common-issue-netlify-cms-git-gateway-email-not-confirmed/10690)
+
 - > "This repository is configured for Git LFS but 'git-lfs' was not found on your path."
 - Install git-lfs then run `git lfs install` in project root. Then to download the images, run `git lfs pull`. Or if you don't want to download the files/can't login to the lfs server, run `git lfs install --skip-smudge` instead.
 
